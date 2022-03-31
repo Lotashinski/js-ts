@@ -35,6 +35,10 @@ function eventDispatcher(sender) {
     if (currentValue > maxEmptyClick) {
         const brTag = document.createElement("br");
         const labelTag = document.createElement("label");
+
+        labelTag.style['color'] = '#FF0000';
+        labelTag.style['font-size'] = `${currentValue * 2}pt`
+
         const text = stopText[randomInteger(0, stopText.length)];
         const textForLabel = document.createTextNode(text);
 

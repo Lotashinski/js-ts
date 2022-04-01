@@ -19,7 +19,15 @@
 <hr/>
 <label>Button click count: </label> <label id="click_label">0</label>
 
-<script src="js/app.js"></script>
+<!--<script src="js/app.js">-->
+<script>
+    const login = prompt("Loin:")
+    alert(
+        (login === "сотрудник") ? "Привет!" :
+            (login === "директор") ? "Здравствуйте" :
+                (login === "") ? "нет логина" : ""
+    )
+</script>
 <!--<script src="js/draw.js"></script>-->
 <!--<script src="js/canvas.js"></script>-->
 </body>

@@ -32,7 +32,7 @@ function eventDispatcher(sender) {
         body.appendChild(hrTag);
     }
 
-    if (currentValue > maxEmptyClick) {
+    if (currentValue >= maxEmptyClick) {
         const brTag = document.createElement("br");
         const labelTag = document.createElement("label");
 
